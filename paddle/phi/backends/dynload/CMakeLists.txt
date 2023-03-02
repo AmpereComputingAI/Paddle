@@ -106,6 +106,8 @@ cc_library(
 add_dependencies(phi_dynload_lapack extern_lapack)
 # TODO(TJ): add iomp, mkldnn?
 
+set(MKL_FOUND OFF)
+
 if(MKL_FOUND AND WITH_ONEMKL)
   message("ONEMKL INCLUDE directory is ${MKL_INCLUDE}")
   cc_library(

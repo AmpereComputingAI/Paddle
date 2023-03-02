@@ -86,6 +86,8 @@ endif()
 
 # TODO(TJ): add iomp, mkldnn?
 
+set(MKL_FOUND OFF)
+
 if(MKL_FOUND AND WITH_ONEMKL)
   message("ONEMKL INCLUDE directory is ${MKL_INCLUDE}")
   cc_library(
